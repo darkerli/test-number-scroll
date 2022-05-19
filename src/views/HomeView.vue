@@ -1,18 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <number-roll ref="numberRoll" :startNumber='1' :endNumber="123" roll-height="120px" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import numberRoll from 'vue2-number-roll'
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
-  },
+    numberRoll
+  }
 };
 </script>
